@@ -1,0 +1,11 @@
+<a  [routerLink]="[currentSelectedrecipe.name]" 
+routerLinkActive="active"
+class="list-group-item clearfix" (click) = "recipeWasSelected()">
+  <div class="pull-left">
+    <h1 class="list-group-item-heading">{{currentSelectedrecipe.name}}</h1>
+    <p class="list-group-item-text">{{currentSelectedrecipe.description}}</p>
+  </div>
+  <span class="pull-right">
+    <img [src]="currentSelectedrecipe.imagePath" alt="Image could not be rendered" class="img-responsive" style="max-height:50px;">
+  </span>
+</a>
